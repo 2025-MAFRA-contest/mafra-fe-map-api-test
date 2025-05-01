@@ -1,0 +1,5 @@
+namespace kakao {
+  namespace maps {
+
+  }
+}
