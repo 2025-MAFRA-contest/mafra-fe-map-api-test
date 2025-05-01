@@ -1,4 +1,4 @@
-## 할 일
+## ✅ 할 일
 
 -  kakao map api 연동해보기
 
@@ -27,11 +27,9 @@
 #### **5. 개발 서버 실행**
 - `npm run dev`
 
----
 
 ## ✅ Kakao Maps API 구성 – 전체 처리할 일 요약
 
----
 
 ### **1. Kakao Maps API 로드 구성**
 - `autoload=false` 옵션으로 Kakao Maps SDK 로드 설정
