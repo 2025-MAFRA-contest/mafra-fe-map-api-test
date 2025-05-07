@@ -2,7 +2,11 @@
 
 declare namespace kakao {
   namespace maps {
-    type MapTypeId = 'roadmap' | 'satellite' | 'hybrid' | 'terrain';
+    enum MapTypeId {
+      ROADMAP, 
+      SKYVIEW, 
+      HYBRID
+    }
 
 
     // 좌표

@@ -12,6 +12,7 @@ export default function Map() {
 		const options = {
 			center: new window.kakao.maps.LatLng(37.566826, 126.978656),
 			level: 3,
+			mapTypeId: window.kakao.maps.MapTypeId.SKYVIEW,
 		};
 		if (!container) {
 			console.error('container is null');
