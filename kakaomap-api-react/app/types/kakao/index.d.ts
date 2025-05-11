@@ -22,7 +22,7 @@ declare namespace kakao {
       center: LatLng;
       level?: number;
       mapTypeId?: MapTypeId;
-      draggalbe?: boolean;
+      draggable?: boolean;
       scrollwheel?: boolean;
       disableDoubleClick?: boolean;
       disableDoubleClickZoom?: boolean;
@@ -42,6 +42,20 @@ declare namespace kakao {
       addControl(control: MapTypeControl | ZoomControl, position: ControlPosition): void;
     }
 
+    // 마커
+    class Marker {
+      constructor(options: {
+        position: LatLng;
+        map?: Map;
+        image?: any;
+        title?: string;
+        clickable?: boolean;
+      });
+    
+      getPosition(): LatLng;
+      setMap(map: Map | null): void;
+    }
+    
      // 컨트롤러
     const ControlPosition: {
       TOP: number;
@@ -67,3 +81,11 @@ declare namespace kakao {
     function load(callback: () => void): void;
   }
 }
+
+declare global {
+  interface Window {
+    kakao: kakao;
+  }
+}
+
+export {};
